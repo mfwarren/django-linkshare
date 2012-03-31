@@ -1,0 +1,20 @@
+<div class="box greenbox">
+<h2>Linkshare Stats Month to Date</h2>
+<strong>Total: ${{total}}</strong>
+<table width="100%">
+	<tr>
+		<th>Advertiser</th>
+		<th>Clicks</th>
+		<th>Sales</th>
+		<th>Commissions</th>
+	</tr>
+	{% for r in reports %}
+	<tr>
+		<td>{{r.advertiser}}</td>
+		<td>{{r.clicks}}</td>
+		<td>${{r.sales}}</td>
+		<td>${{r.baseline_commissions}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</div>

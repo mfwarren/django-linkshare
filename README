@@ -1,0 +1,6 @@
+This django app provides a script to download month to date sales and activity reports from Linkshare's web service.
+
+To integrate this you will need to get a web services security key for your account.
+
+The management command "./manage.py linkshare" will download month to date numbers and save them to the database.
+You can use cron to schedule this to run regularly. (there's a limit of 300 requests/day on the API)
