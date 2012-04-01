@@ -1,12 +1,11 @@
-from AppControl.linkshare.models import SalesReport
-
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 
-from settings import *
 import datetime, time
 import urllib2, urllib
 import csv
+
+from linkshare.models import SalesReport
 
 class Command(BaseCommand):
     help = "Download sales data from Admob"
